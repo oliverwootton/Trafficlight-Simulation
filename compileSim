@@ -1,0 +1,5 @@
+gcc -ansi -c runSimulations.c -I./ -o runSimulations.o
+gcc -ansi -c queue.c -I./ -o queue.o
+gcc -ansi -c trafficlights.c -I./ -o trafficlights.o
+gcc -ansi -c stats.c -I./ -o stats.o
+gcc runSimulations.o queue.o trafficlights.o stats.o -o runSimulations
